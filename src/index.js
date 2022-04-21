@@ -8,6 +8,12 @@ import "./styles.css";
 // </div>
 // `;
 
+// $(function () {
+//   $("h1").hide();
+// });
+
 $(function () {
-  $("h1").hide();
+  $("#hide-text").click(function () {
+    $("#text").slideUp();
+  });
 });
