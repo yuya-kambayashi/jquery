@@ -54,3 +54,19 @@ $(function () {
     $("#text").html('<a href="https://google.com">リンク</a>');
   });
 });
+
+$(function () {
+  $("#hide-text").hover(function () {
+    $("#text").hide();
+  });
+});
+
+$(function () {
+  $("#chain-text").click(function () {
+    $("#text").css("font-weight", "normal").fadeOut();
+  });
+});
+
+var $title = $("#title");
+$title.css("color", "red");
+$title.fadeOut();
