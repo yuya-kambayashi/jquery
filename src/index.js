@@ -14,6 +14,43 @@ import "./styles.css";
 
 $(function () {
   $("#hide-text").click(function () {
+    $("#text").hide();
+  });
+});
+
+$(function () {
+  $("#fadeOut-text").click(function () {
+    $("#text").fadeOut();
+  });
+});
+
+$(function () {
+  $("#slideUp-text").click(function () {
     $("#text").slideUp();
+  });
+});
+
+$(function () {
+  $("#show-text").click(function () {
+    $("#hide").show();
+  });
+});
+
+$(function () {
+  $("#css-text").click(function () {
+    $("#text").css("color", "red");
+    $("#text").css("font-weight", "normal");
+  });
+});
+
+$(function () {
+  $("#text-text").click(function () {
+    $("#text").text("changed");
+  });
+});
+
+$(function () {
+  $("#html-text").click(function () {
+    $("#text").html('<a href="https://google.com">リンク</a>');
   });
 });
